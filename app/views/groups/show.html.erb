@@ -1,10 +1,29 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <p class="notice"><%= notice %></p>
 
-<%= render @group %>
+  <h1 class="page-title">Transaction Page</h1>
+  
+  <% total_amount = 0 %>
+  <% @group_entities.each do |group_entity| %>
+  <% total_amount += group_entity.entity.amount %>
+  <% end %>
 
-<div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
-  <%= link_to "Back to groups", groups_path %>
+  <div class="head-div">
+  <h2 class="category-name">Category Name: <%= @group.name %></h2>
+  <h2 class="total-amount">Total Amount:$ <%= total_amount %></h2>
+  </div>
 
-  <%= button_to "Destroy this group", @group, method: :delete %>
+  <ul class="group-entities-list">
+    <% @group_entities.each do |group_entity| %>
+      <li class="group-entity">
+        <div><strong class="entity-name">Name:</strong> <%= group_entity.entity.name %><br></div>
+        <div><strong class="entity-amount">Amount:</strong>$ <%= group_entity.entity.amount %><br></div>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="transaction-buttons">
+    <%= link_to "New Transaction", new_group_entity_path(group_id: @group.id), class: 'alink back-button' %>
+    <%= link_to "Back", groups_path, class: 'link' %>
+  </div>
 </div>

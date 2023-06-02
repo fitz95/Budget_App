@@ -1,0 +1,26 @@
+<%= form_with(model: @group_entity, url: group_entities_path, class: 'form-container') do |form| %>
+  <% if @group_entity.errors.any? %>
+    <div id="error_explanation" class="error-explanation">
+      <h2><%= pluralize(@group_entity.errors.count, "error") %> prohibited this group_entity from being saved:</h2>
+
+      <ul class="error-list">
+        <% @group_entity.errors.full_messages.each do |message| %>
+          <li class="error-message"><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :group_id, class: 'label' %>
+  <%= form.collection_select :group_id, @groups, :id, :name, { prompt: 'Select Group' }, class: 'input-field' %>
+
+  <%= form.fields_for :entity do |entity_form| %>
+    <%= entity_form.label :name, class: 'label' %>
+    <%= entity_form.text_field :name, class: 'input-field' %>
+
+    <%= entity_form.label :amount, class: 'label' %>
+    <%= entity_form.number_field :amount, class: 'input-field' %>
+  <% end %>
+
+  <%= form.submit 'Submit', class: 'submit-button' %>
+<% end %>
