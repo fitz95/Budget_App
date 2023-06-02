@@ -7,6 +7,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Deployment](#triangular_flag_on_post-deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -24,6 +25,20 @@ Its a budget app that is used to store data for multiple categories .
 - Languages: Ruby on rails
 - Frameworks: N/A
 - Technologies Used: GIT, GITHUB, LINTERS
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Key Features <a name="key-features"></a>
+
+- **Add Category**
+- **Add Transaction**
+- **View Transaction**
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You would be able see later a Live Version of this libray deployed with Render below
+
+**https://storegere.onrender.com/**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,6 +69,12 @@ In order to run this project you need:
 - On the command line, at the project's root, run `bundle install` to install app dependencies
 
 - Next, run `ruby main.rb` which will run the app in the development mode.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Deployment
+
+You can deploy this project using Heroku, Netlify or any free hosting platform
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
