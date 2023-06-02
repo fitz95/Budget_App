@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'groups/show', type: :view do
   before do
     assign(:group, Group.new(name: 'Group 1'))
     assign(:group_entities, [
-      GroupEntity.new(entity: Entity.new(name: 'Entity 1', amount: 10)),
-      GroupEntity.new(entity: Entity.new(name: 'Entity 2', amount: 20))
-    ])
+             GroupEntity.new(entity: Entity.new(name: 'Entity 1', amount: 10)),
+             GroupEntity.new(entity: Entity.new(name: 'Entity 2', amount: 20))
+           ])
   end
 
   it 'displays the group name' do

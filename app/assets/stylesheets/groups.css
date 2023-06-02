@@ -1,80 +1,76 @@
- .group-card {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f8f8f8;
-  }
-  
-  .group-card h3 {
-    margin-top: 0;
-  }
-  
-  .group-card p {
-    margin-bottom: 5px;
-  }
-  
-  .group-card a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .group-card a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Define different background colors for each group card */
-  .group-card:nth-child(odd) {
-    background-color: #f0f0f0;
-  }
-  
-  .group-card:nth-child(even) {
-    background-color: #e0e0e0;
-  }
-  
-    /* Define a hover effect for the group cards */
-    .group-card:hover {
-        background-color: #d0d0d0;
-    }
-    
-    /* Define a hover effect for the group cards' links */
-    .group-card a:hover {
-        text-decoration: none;
-    }
+.group-card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
 
-    .group-flex{
-        display: flex;
-        align-items: center;
-        gap: 75px;
-    }
+.group-card h3 {
+  margin-top: 0;
+}
 
-    .img{
-        width: 25px;
-        height: 25px;
-    }
+.group-card p {
+  margin-bottom: 5px;
+}
 
-    .img-div{
-        margin-right: 10px;
-        width: auto;
-    }
+.group-card a {
+  color: #007bff;
+  text-decoration: none;
+}
 
-    .alink.back-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-      
-      .alink.back-button:hover {
-        background-color: #45a049;
-      }
 
-      .transaction-buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-        align-items: center;      
-      }
-      
+/* Define different background colors for each group card */
+.group-card:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.group-card:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* Define a hover effect for the group cards */
+.group-card:hover {
+  background-color: #d0d0d0;
+}
+
+/* Define a hover effect for the group cards' links */
+.group-card a:hover {
+  text-decoration: none;
+}
+
+.group-flex {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+.img {
+  width: 25px;
+  height: 25px;
+}
+
+.img-div {
+  margin-right: 10px;
+  width: auto;
+}
+
+.alink.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.alink.back-button:hover {
+  background-color: #45a049;
+}
+
+.transaction-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
