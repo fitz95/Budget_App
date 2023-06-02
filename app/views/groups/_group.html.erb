@@ -1,12 +1,13 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id group %>" class='group-flex'>
+  <div class='img-div'>
+  <%= link_to(group, class: "img") do %>
+    <%= image_tag(group.icon, class: "img-thumbnail", width: 85, height: 75) %>
+  <% end %>
+  
+  </div>
+ 
+  <div>
     <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+  </div>
 
 </div>

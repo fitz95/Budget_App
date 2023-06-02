@@ -1,0 +1,55 @@
+.form-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.error-explanation {
+  background-color: #fcc;
+  border: 1px solid #f00;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.error-explanation h2 {
+  font-size: 20px;
+  color: #f00;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.error-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #f00;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
