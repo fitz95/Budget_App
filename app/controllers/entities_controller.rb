@@ -65,6 +65,8 @@ class EntitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def entity_params
-      params.require(:entity).permit(:name, :amount, :AuthorID)
+      entity = params.require(:entity).permit(:name, :amount)
+      entity[:user_id] = current_user.id
+      entity
     end
 end

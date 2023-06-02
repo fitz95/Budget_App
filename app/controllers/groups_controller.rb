@@ -8,6 +8,8 @@ class GroupsController < ApplicationController
 
   # GET /groups/1 or /groups/1.json
   def show
+    @group = Group.find(params[:id])
+    @group_entities = GroupEntity.where(group_id: @group.id).order(created_at: :desc)
   end
 
   # GET /groups/new
@@ -22,6 +24,7 @@ class GroupsController < ApplicationController
   # POST /groups or /groups.json
   def create
     @group = Group.new(group_params)
+
 
     respond_to do |format|
       if @group.save
@@ -65,6 +68,8 @@ class GroupsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def group_params
-      params.require(:group).permit(:name, :icon)
+      group = params.require(:group).permit(:name, :icon)
+      group[:user_id] = current_user.id
+      group
     end
 end
