@@ -16,7 +16,7 @@
 
 # 📖 Budget App <a name="about-project"></a>
 
-Its a recipe app website.
+Its a budget app that is used to store data for multiple categories .
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
