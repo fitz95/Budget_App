@@ -1,13 +1,17 @@
 <div id="<%= dom_id group %>" class='group-flex'>
+  <div class='icon-flex'>
   <div class='img-div'>
   <%= link_to(group, class: "img") do %>
     <%= image_tag(group.icon, class: "img-thumbnail", width: 85, height: 75) %>
   <% end %>
-  
   </div>
  
   <div>
     <%= group.name %>
+  </div>
+  </div>
+  <div>
+    <p class='transaction-amt'>$<%= @group_entity_totals[group.id] %></p>
   </div>
 
 </div>

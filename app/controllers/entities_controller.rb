@@ -1,5 +1,5 @@
-# frozen_string_literal: true
-
+# ApplicationController is the base controller class for your Rails application.
+# It provides common functionality and acts as a parent class for other controllers.
 class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
 
