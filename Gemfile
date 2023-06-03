@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -77,3 +75,4 @@ end
 
 gem 'cancancan'
 gem 'devise'
+gem 'rubocop', '>= 1.0', '< 2.0'

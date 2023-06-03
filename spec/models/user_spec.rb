@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # spec/models/user_spec.rb
 
 require 'rails_helper'
