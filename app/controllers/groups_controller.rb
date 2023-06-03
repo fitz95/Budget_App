@@ -6,6 +6,17 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = Group.all
+    @group_entity_totals = {}
+  
+    @groups.each do |group|
+      total_amount = 0
+  
+      group.group_entities.each do |group_entity|
+        total_amount += group_entity.entity.amount
+      end
+  
+      @group_entity_totals[group.id] = total_amount
+    end
   end
 
   # GET /groups/1 or /groups/1.json

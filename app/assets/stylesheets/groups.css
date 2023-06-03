@@ -38,9 +38,16 @@
 }
 
 .group-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30%;
   align-items: center;
-  gap: 75px;
+}
+
+.icon-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .img {

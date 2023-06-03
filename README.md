@@ -63,12 +63,12 @@ In order to run this project you need:
 - Navigate to Budget-app folder/directory
 
   ```bash
-  cd myblog-app
+  cd budget_app
   ```
 
 - On the command line, at the project's root, run `bundle install` to install app dependencies
 
-- Next, run `ruby main.rb` which will run the app in the development mode.
+- Next, run `rails s` which will run the server for the App.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,6 +112,7 @@ If you like this project, please give it a ⭐️!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thanks to my learning and coding partners for all their support.
+- I also Acknowledge Gregoire Vella for this project UI 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
