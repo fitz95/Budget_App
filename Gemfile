@@ -75,5 +75,4 @@ end
 
 gem 'cancancan'
 gem 'devise'
-gem "webrick"
-
+gem 'webrick'
