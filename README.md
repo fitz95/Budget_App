@@ -36,7 +36,7 @@ Its a budget app that is used to store data for multiple categories .
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-You would be able see later a Live Version of this libray deployed with Render below
+You would be able see later a Live Version of this Budget App  deployed with Render below
 
 **https://storegere.onrender.com/**
 
