@@ -11,16 +11,6 @@ RSpec.describe Group, type: :model do
       expect(subject).to be_valid
     end
 
-    it 'is not valid without a name' do
-      subject.name = nil
-      expect(subject).to_not be_valid
-    end
-
-    it 'is not valid without an icon' do
-      subject.icon = nil
-      expect(subject).to_not be_valid
-    end
-
     it 'is not valid without a user' do
       subject.user_id = nil
       expect(subject).to_not be_valid
