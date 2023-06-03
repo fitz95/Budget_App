@@ -1,4 +1,5 @@
-<div class="container">
+
+<div class="contain">
   <p class="notice"><%= notice %></p>
 
   <h1 class="page-title">Transaction Page</h1>
@@ -9,21 +10,22 @@
   <% end %>
 
   <div class="head-div">
-  <h2 class="category-name">Category Name: <%= @group.name %></h2>
-  <h2 class="total-amount">Total Amount:$ <%= total_amount %></h2>
+  <p class='trans-heading'><%= @group.name %></p>
+  <p class="transaction-amt">$ <%= total_amount %></p>
   </div>
 
   <ul class="group-entities-list">
     <% @group_entities.each do |group_entity| %>
       <li class="group-entity">
-        <div><strong class="entity-name">Name:</strong> <%= group_entity.entity.name %><br></div>
-        <div><strong class="entity-amount">Amount:</strong>$ <%= group_entity.entity.amount %><br></div>
+        <div> <p><%= group_entity.entity.name %><br><p></div>
+        <div><p class='transaction-amt'>$ <%= group_entity.entity.amount %><br></p></div>
       </li>
     <% end %>
   </ul>
 
-  <div class="transaction-buttons">
-    <%= link_to "New Transaction", new_group_entity_path(group_id: @group.id), class: 'alink back-button' %>
-    <%= link_to "Back", groups_path, class: 'link' %>
-  </div>
+  
+  <%= link_to "New Transaction", new_group_entity_path(group_id: @group.id), class: 'alink back-button' %>
+  <%= link_to "Back", groups_path, class: 'link' %>
 </div>
+  
+
