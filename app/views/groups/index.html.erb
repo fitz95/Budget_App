@@ -7,11 +7,12 @@
   <div id="groups">
     <% @groups.each do |group| %>
       <div class="group-card">
+      
         <%= render group %>
       </div>
     <% end %>
   </div>
 
-  <%= link_to "Add Category", new_group_path, class: 'alink back-button' %>
+  <%= link_to "Add Category", new_group_path, class: 'alink home-button' %>
 
 </div>

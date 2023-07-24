@@ -18,7 +18,6 @@
   text-decoration: none;
 }
 
-
 /* Define different background colors for each group card */
 .group-card:nth-child(odd) {
   background-color: #f0f0f0;
@@ -39,9 +38,16 @@
 }
 
 .group-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30%;
   align-items: center;
-  gap: 75px;
+}
+
+.icon-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .img {
@@ -55,12 +61,14 @@
 }
 
 .alink.back-button {
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
   background-color: #4caf50;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  width: 85%;
+  margin-bottom: 10px;
 }
 
 .alink.back-button:hover {
@@ -73,4 +81,19 @@
   margin-left: 20px;
   margin-right: 20px;
   align-items: center;
+}
+
+.transaction-amt {
+  font-weight: 600;
+  font-size: large;
+}
+
+.alink.home-button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }

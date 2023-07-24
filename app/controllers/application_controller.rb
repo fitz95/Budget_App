@@ -1,5 +1,5 @@
-# frozen_string_literal: true
-
+# ApplicationController is the base controller class for your Rails application.
+# It provides common functionality and acts as a parent class for other controllers.
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?

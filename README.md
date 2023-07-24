@@ -7,6 +7,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Deployment](#triangular_flag_on_post-deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -16,7 +17,7 @@
 
 # 📖 Budget App <a name="about-project"></a>
 
-Its a recipe app website.
+Its a budget app that is used to store data for multiple categories .
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -24,6 +25,22 @@ Its a recipe app website.
 - Languages: Ruby on rails
 - Frameworks: N/A
 - Technologies Used: GIT, GITHUB, LINTERS
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Key Features <a name="key-features"></a>
+
+- **Add Category**
+- **Add Transaction**
+- **View Transaction**
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+You would be able see later a Live Version of this Budget App  deployed with Render below
+
+**https://storegere.onrender.com/**
+
+- video link https://www.loom.com/share/85fdc3351fc54305b7e70c11307fd118
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -48,12 +65,18 @@ In order to run this project you need:
 - Navigate to Budget-app folder/directory
 
   ```bash
-  cd myblog-app
+  cd budget_app
   ```
 
 - On the command line, at the project's root, run `bundle install` to install app dependencies
 
-- Next, run `ruby main.rb` which will run the app in the development mode.
+- Next, run `rails s` which will run the server for the App.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Deployment
+
+You can deploy this project using Heroku, Netlify or any free hosting platform
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,6 +114,7 @@ If you like this project, please give it a ⭐️!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Thanks to my learning and coding partners for all their support.
+- I also Acknowledge Gregoire Vella for this project UI 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
